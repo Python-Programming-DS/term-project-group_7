@@ -6,6 +6,13 @@ A Retrieval-Augmented Generation (RAG) chatbot built to answer questions about U
 
 The UF Policy RAG Chatbot leverages a sophisticated retrieval-augmented generation pipeline to provide intelligent responses to policy-related questions. By combining semantic search with generative AI, it delivers accurate, contextual answers based on official UF policies.
 
+### Frontend and Backend Functionality
+
+![Frontend](presentation_plots/App_demo.png)
+
+![Backend Functionality](presentation_plots/Backend_functionality.png)
+
+
 ### Key Features
 
 - **Semantic Search**: Uses BGE embeddings for intelligent document retrieval
@@ -193,7 +200,7 @@ The project includes several Jupyter notebooks used for different stages of deve
 ### 6. **RAG_accuracy_score_comparison.ipynb**
 **Purpose**: Performance Evaluation
 - Compares retrieval accuracy across different configurations
-- Metrics: Precision, Recall, F1-Score
+- Metrics: Rouge, Meteor, Bleu scores
 - Tests different chunk sizes and overlaps
 - Compares embedding models
 - **Output**: Performance benchmarks and recommendations
