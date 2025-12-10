@@ -6,6 +6,7 @@ from dataclasses import dataclass
 @dataclass
 class EmbeddingConfig:
     """Configuration for embedding models."""
+    # Hugging face embedding: https://huggingface.co/BAAI/bge-small-en
     model_name: str = "BAAI/bge-base-en-v1.5"
     dimension: Optional[int] = None
 
@@ -21,6 +22,7 @@ class ChromaDBConfig:
 @dataclass
 class OpenAIConfig:
     """Configuration for OpenAI client."""
+    ## Api key will be removed after evaluation of project
     # api_key: str = os.getenv("OPENAI_API_KEY", "sk-pgNP-BIHOtI8RPt-aC3Stg")
     api_key="sk-Jz7TVhKsaeJYJHRSaGl1ag"
     # api_key="sk-pgNP-BIHOtI8RPt-aC3Stg"
