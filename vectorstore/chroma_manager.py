@@ -33,14 +33,14 @@ class ChromaDBManager:
         """Get existing collection or create new one."""
         try:
             self.collection = self.client.get_collection(name=self.config.collection_name)
-            print(f"✓ Retrieved existing collection: {self.config.collection_name}")
+            print(f"Retrieved existing collection: {self.config.collection_name}")
             print(f"  Current documents: {self.collection.count()}")
         except:
             self.collection = self.client.create_collection(
                 name=self.config.collection_name,
                 metadata={"description": self.config.description}
             )
-            print(f"✓ Created new collection: {self.config.collection_name}")
+            print(f"Created new collection: {self.config.collection_name}")
     
     def query(
         self,

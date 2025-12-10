@@ -61,7 +61,7 @@ class RetrievalPipeline:
             prompt_builder=self.prompt_builder
         )
         
-        print("\n✓ Pipeline initialized successfully!")
+        print("\nPipeline initialized successfully!")
         print("=" * 60)
     
     def query(

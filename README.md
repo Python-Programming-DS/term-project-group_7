@@ -425,7 +425,7 @@ This project includes an evaluation of multiple LLMs to measure answer quality o
 
 ### Evaluation Strategy
 
-- **Sample collection**: We collected a balanced set of **50 sample questions** drawn from UF policy pages and common policy-related queries encountered by users.
+- **Sample collection**: We collected a balanced set of **43 sample questions** drawn from UF policy pages and common policy-related queries encountered by users.
 - **Reference answers**: For each question, a human expert (project team) wrote a concise, authoritative reference answer based on the official UF policy text.
 - **Model responses**: Each LLM (evaluated models) was prompted via the RAG pipeline to generate an answer using the retrieved context from ChromaDB.
 - **Metrics**: We computed automated metrics for each (reference, prediction) pair:
